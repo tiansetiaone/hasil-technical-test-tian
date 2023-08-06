@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
+  @include('partials.navbar')
     <div class="container">
         <h1>Artikel Berita</h1>
         @foreach ($data['articles'] as $item)
@@ -28,4 +29,5 @@
           <hr>
         @endforeach
     </div>
+    @include('partials.footer')
 @endsection
